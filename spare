@@ -1,0 +1,42 @@
+<div class="year">
+        <ul>
+
+            <!--2019 Carousel-->
+            <li class="marker-2019">
+                <p>2019</p>
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+                
+            <li>
+                   
+            </li>
+            <!--end 2019 Carousel-->
+
+            <!--2018 Carousel-->
+            <li class="marker-2018">
+                    <p>2018</p>
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+            <!--end 2018 Carousel-->
+
+
+        </ul>
+    </div>
