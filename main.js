@@ -33,46 +33,122 @@ function carousel2018() {
 
 
 
+var myIndex2017 = 0;
+carousel2017();
 
-$('.item-1').click(function() {
-  $('.preview-2019').css('display', 'block');
+function carousel2017() {
+  var i2017;
+  var x2017 = document.getElementsByClassName("p-2017");
+  for (i = 0; i < x2017.length; i++) {
+    x2017[i].style.display = "none";  
+  }
+  myIndex2017++;
+  if (myIndex2017 > x2017.length) {myIndex2017 = 1}    
+  x2017[myIndex2017-1].style.display = "block";  
+  setTimeout(carousel2017, 2000); // Change image every 2 seconds
+}
+
+
+
+
+$('.slick-item-1').click(function() {
+  $('.preview-2017').css('display', 'none');
   $('.preview-2018').css('display', 'none');
+  $('.preview-2019').css('display', 'block');
+  
+  
 });
 
 
-
-
-$('.item-5').click(function() {
+$('.slick-item-5').click(function() {
+  $('.preview-2017').css('display', 'none');
   $('.preview-2019').css('display', 'none');
   $('.preview-2018').css('display', 'block');
 });
 
 
-
-
-
-$('#basicSlider').multislider({
-    hoverPause: false,
-    duration: 0
+$('.slick-item-9').click(function() {
+  $('.preview-2019').css('display', 'none');
+  $('.preview-2018').css('display', 'none');
+  $('.preview-2017').css('display', 'block');
+  
 });
 
-$('#basicSlider').multislider('pause');
 
-$('#basicSlider').mouseover(function() {
-  $('#basicSlider').multislider({
-    continuous: true,
-    duration: 2000
+
+
+
+$('.slick').slick({
+  dots: false,
+  infinite: false,
+  pauseOnHover: true,
+  slidesToShow: 4,
+  autoplay: false,
+  autoplaySpeed: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  rtl:false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+});
+
+
+
+
+
+$('.slick-next').on('mouseover',function(){
+
+    $('.slick-slider').slick('slickPlay');
+  
   });
-});
 
+  $('.slick-next').on('mouseleave',function(){
 
-$('#basicSlider').mouseleave(function() {
-  $('#basicSlider').multislider('pause');
-});
-
-$('#basicSlider').mouseover(function() {
-  $('#basicSlider').multislider('unPause');
-});
+    $('.slick-slider').slick('slickPause');
+  
+  });
 
 
 
+
+  // $('.slick-prev').on('mouseover',function(){
+    
+  //   // $('.slick-slider').slick('slickPrev');
+
+    
+    
+  //   });
+
+
+  $('.slick-prev').mouseover(function() {
+    var slider = $('.slick');
+    slider.slick('slickGoTo', 0, false);
+
+  });     
+
+
+  
