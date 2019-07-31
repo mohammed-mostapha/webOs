@@ -135,13 +135,7 @@ $('.slick-next').on('mouseover',function(){
 
 
 
-  // $('.slick-prev').on('mouseover',function(){
-    
-  //   // $('.slick-slider').slick('slickPrev');
-
-    
-    
-  //   });
+ 
 
 
   $('.slick-prev').mouseover(function() {
