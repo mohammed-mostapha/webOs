@@ -224,7 +224,7 @@ header {
 
 .preview-container {
     width: 70%;
-    height: 60%;
+    height: 80%;
     margin: 0 auto;
     box-sizing: border-box;
     padding-bottom: 5%;
@@ -290,7 +290,7 @@ header {
 
 
 .slick-container {
-    height: 40%;
+    height: 20%;
     box-sizing: border-box;
     overflow: visible !important;
 }

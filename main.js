@@ -87,6 +87,8 @@ $('.slick').slick({
   autoplaySpeed: 1,
   slidesToScroll: 1,
   draggable: true,
+  swipe: true,
+  touchMove: true,
   rtl:false,
   responsive: [
     {
