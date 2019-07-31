@@ -2,10 +2,15 @@
 
 html {
     height: 100%;
+    width: 100%;
     overflow: hidden !important;
+    margin: 0;
+    padding: 0;
 }
 
  body {
+    margin: 0;
+    padding: 0;
     max-width: 100% !important;
     height: 100%;
     font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
@@ -15,9 +20,8 @@ html {
     box-sizing: border-box;
     flex-direction: column;
     overflow-x: hidden !important;
- 
+    overflow-y: hidden !important;
 }
-
 
 
 
@@ -207,7 +211,7 @@ header {
 
 
 .main-container {
-    height: 100%;
+    height: 100% !important;
     position: relative;
     bottom: 0;
     max-width: 100%;
@@ -222,19 +226,24 @@ header {
 
 .preview-container {
     width: 70%;
-    height: 70%;
+    height: 60%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding-top: 5%;
-    padding-bottom: 15%;
-    /* border: 2px solid blue !important; */
+    padding-bottom: 5%;
 }
 
+@media only screen and (max-width: 1740px) {
+    .preview-container {
+        padding-bottom: 0%;
+        display: flex;
 
+    }
+}
 
 .preview-2019 {
+    align-self: center;
     width: 100%;
-    height: 100%;
+    height: 70%;
     display: block;
     
 }
@@ -264,7 +273,6 @@ header {
 .p-2019, .p-2018, .p-2017 {
     width: 100%;
     height: 100%;
-    border: 5px solid lightcoral;
     position: relative;
 }
 
@@ -272,7 +280,6 @@ header {
 
 
 .caption {
-    /* border: 2px solid blue; */
     text-align: right;
     position: absolute;
     top: 10%;
@@ -284,18 +291,11 @@ header {
 
 
 
-
-
-* {
-    border: none !important;
-}
-
-
 .slick-container {
-    height: 30%;
+    height: 40%;
     box-sizing: border-box;
     overflow: visible !important;
-    /* border: 2px solid red !important; */
+    padding-bottom: 5rem;
 }
 
 .slick-prev {
@@ -336,7 +336,7 @@ header {
     background: blue;
     opacity: 0;
     height: 100%;
-    width: 50px;
+    width: 100px;
 }
 
 
