@@ -226,7 +226,7 @@ header {
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     /* border: 2px solid blue !important; */
 }
 
@@ -325,6 +325,7 @@ header {
     height: 100% !important;
     transform: skew(-20deg);
     transition: transform .1s ease-in-out;
+    outline: none;
 }
 
 .slick-container .slick-item:hover {
