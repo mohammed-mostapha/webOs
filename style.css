@@ -24,6 +24,7 @@ html {
 header {
     border-bottom: 1px solid #000 !important;
     height: 6rem;
+    position: relative;
     padding: 1rem;
     padding-bottom: 0;
     display: flex;
@@ -114,10 +115,9 @@ header {
     }
 
     .logo {
-        position: absolute;
+        position: absolute !important;
         align-self: flex-start;
         height: 6rem;
-
         
     }
 
