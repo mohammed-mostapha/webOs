@@ -20,14 +20,13 @@ html {
     box-sizing: border-box;
     flex-direction: column;
     overflow-x: hidden !important;
-    overflow-y: hidden !important;
 }
 
 
 
 header {
     border-bottom: 1px solid #000 !important;
-    height: 6rem;
+    height: 10%;
     position: relative;
     padding: 1rem;
     padding-bottom: 0;
@@ -41,9 +40,8 @@ header {
 
 
 .logo {
-    height: 4.5rem !important;
+    height: 100%;
     align-self: center; 
-    height: fit-content;
     display: flex;
     max-width: 30%;
 }
@@ -57,7 +55,7 @@ header {
 }
 
 .logo img {
-    height: 100%;
+    height: 100%
 }
 
 
@@ -211,7 +209,7 @@ header {
 
 
 .main-container {
-    height: 100% !important;
+    height: 90% !important;
     position: relative;
     bottom: 0;
     max-width: 100%;
@@ -295,7 +293,6 @@ header {
     height: 40%;
     box-sizing: border-box;
     overflow: visible !important;
-    padding-bottom: 5rem;
 }
 
 .slick-prev {
