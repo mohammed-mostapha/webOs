@@ -234,8 +234,11 @@ header {
 
 @media only screen and (max-width: 1740px) {
     .preview-container {
-        padding-bottom: 0;
+        padding-bottom: 5%;
+    }
 
+    .preview-2019, .preview-2018, .preview-2017 {
+        padding-bottom: 5%;
     }
 }
 
