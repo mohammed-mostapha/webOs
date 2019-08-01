@@ -240,6 +240,11 @@ header {
     .preview-2019, .preview-2018, .preview-2017 {
         padding-bottom: 5%;
     }
+
+    .header {
+        
+       margin-bottom: 5rem !important;
+    }
 }
 
 .preview-2019 {
