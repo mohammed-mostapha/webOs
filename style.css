@@ -224,7 +224,7 @@ header {
 
 
 .preview-container {
-    display: flex;
+    display: flex !important;
     width: 80%;
     height: 80%;
     margin: 0 auto;
