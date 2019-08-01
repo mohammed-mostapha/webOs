@@ -241,8 +241,8 @@ header {
         padding-bottom: 5%;
     }
 
-    .header {
-        
+    .preview-container {
+       margin-top: 5rem !important;
        margin-bottom: 5rem !important;
     }
 }
