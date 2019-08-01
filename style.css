@@ -34,6 +34,7 @@ header {
     justify-content: space-between;
     text-transform: uppercase;
     box-sizing: border-box;
+    margin-bottom: 5rem;
 }
 
 
@@ -223,7 +224,6 @@ header {
 
 
 .preview-container {
-    display: flex;
     width: 80%;
     height: 80%;
     margin: 0 auto;
@@ -231,19 +231,11 @@ header {
     padding-bottom: 5%;
 }
 
-@media only screen and (max-width: 1740px) {
-    .preview-container {
-        padding-bottom: 0%;
-        display: flex;
-
-    }
-}
 
 .preview-2019 {
     align-self: center;
     width: 100%;
     display: block;
-    
 }
 
 
