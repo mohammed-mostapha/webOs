@@ -329,7 +329,6 @@ header {
     transform: skew(-20deg);
     transition: transform .1s ease-in-out;
     outline: none;
-    border: 1px solid black !important;
 }
 
 
