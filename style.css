@@ -247,9 +247,6 @@ header {
 }
 
 
-
-
-
 .preview-2018 {
     align-self: center;
     width: 100%;
@@ -297,6 +294,9 @@ header {
     height: 20%;
     box-sizing: border-box;
     overflow: visible !important;
+
+
+
 }
 
 .slick-prev {
@@ -322,12 +322,18 @@ header {
     height: 100%;
 }
 
+
+
 .slick-container .slick-item {
     height: 100% !important;
     transform: skew(-20deg);
     transition: transform .1s ease-in-out;
     outline: none;
+    border: 1px solid black !important;
 }
+
+
+
 
 .slick-container .slick-item:hover {
     transform: skew(-20deg) translateY(-15%);
@@ -348,6 +354,12 @@ header {
 
 .slick p {
     margin: 0;
+}
+
+@media only screen and (max-width: 720px) {
+    .slick-item p {
+        font-size: 3rem !important;
+    }
 }
 
 .slick-item-1 {
