@@ -91,7 +91,7 @@ header {
     color: #000;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
 }
 
 
@@ -271,6 +271,11 @@ header {
 @media only screen and (min-width: 640px) {
     .year-container {
         height: 55%;
+    }
+
+    .preview-container {
+       margin-top: 8rem !important;
+       margin-bottom: 1rem !important;
     }
 }
 
