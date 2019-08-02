@@ -25,6 +25,7 @@ body {
     box-sizing: border-box;
     flex-direction: column;
     overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 
@@ -265,9 +266,11 @@ header {
 
 
 .year-container {
+    height: 50% !important;
     width: 100%;
     align-self: center;
 }
+
 
 @media only screen and (min-width: 640px) {
     .year-container {
@@ -281,9 +284,6 @@ header {
     height: 100%;
     display: block;
 }
-
-
-
 
 
 
