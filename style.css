@@ -91,7 +91,7 @@ header {
     color: #000;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
 }
 
 
@@ -116,6 +116,7 @@ header {
     height: 100%;
     width: 0px;
     background: #CC986A;
+    opacity: 0.6;
     color: #fff;
     right: 0px;
     transition: all 500ms linear;
@@ -270,15 +271,10 @@ header {
 
 @media only screen and (min-width: 640px) {
     .year-container {
-        height: 55%;
+        height: 70%;
     }
 
-    .preview-container {
-       margin-top: 8rem !important;
-       margin-bottom: 1rem !important;
-    }
 }
-
 
 .preview-2019 {
     width: 100%;
