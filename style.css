@@ -8,15 +8,20 @@ html {
     padding: 0;
 }
 
- body {
+.container-fluid {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 !important;
+}
+
+
+body {
     margin: 0;
     padding: 0;
-    max-width: 100% !important;
     height: 100%;
     font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
     font-size: 2rem;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     flex-direction: column;
     overflow-x: hidden !important;
@@ -26,22 +31,28 @@ html {
 
 header {
     border-bottom: 1px solid #000 !important;
-    height: 10%;
+    height: fit-content;
     position: relative;
     padding: 1rem;
     padding-bottom: 0;
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     text-transform: uppercase;
     box-sizing: border-box;
-    margin-bottom: 5rem;
+
 }
 
 
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 !important;
+
+}
 
 
 .logo {
-    height: 100%;
+    height: 6rem;
     align-self: center; 
     display: flex;
     max-width: 30%;
@@ -85,6 +96,7 @@ header {
 
 
 
+
 .hamburger-container label {
     margin: 20px 40px 0 0 ;
     font-size: 2.5rem;
@@ -98,7 +110,48 @@ header {
 }
 
 
+#sidebar-menu {
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    width: 0px;
+    background: #CC986A;
+    color: #fff;
+    right: 0px;
+    transition: all 500ms linear;
+}
 
+#sidebar-menu.active {
+    width: 200px;
+}
+
+#sidebar-menu ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#sidebar-menu ul li {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+#content-wrapper {
+    transition: all 500ms linear;
+}
+
+#content-wrapper.active {
+    margin-right: 200px;
+}
+
+#geometic {
+    transition: all 500ms linear;
+}
+
+#geometric.active {
+    visibility: hidden;
+}
 
 
 @media only screen and (max-width: 720px) {
@@ -138,14 +191,6 @@ header {
 
 
 
-    .hamburger-container .menu a {
-        clear: both !important;
-        display: block;
-        padding-top: 1.5rem;
-        height: 0;
-        border-bottom: 1px solid #EAEAEB !important;
-        margin: 0;
-    }
 
     .hamburger-container .menu {
         clear: left !important;
@@ -155,21 +200,6 @@ header {
  
     }
  
-    #toggle:checked + .menu {
-        clear: left !important;
-        position: relative;
-        display: block;
-        height: fit-content;
-    }
-
-    #toggle:checked + .menu a {
-        height: fit-content;
-        display: block !important;
-        
-    }
-
- 
-
 
     label {
         position: relative;
@@ -225,42 +255,47 @@ header {
 
 .preview-container {
     display: flex !important;
-    width: 80%;
+    width: 90%;
     height: 80%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding-bottom: 5%;
 }
 
-@media only screen and (max-width: 1740px) {
-    .preview-container {
-        padding-bottom: 5%;
-    }
 
-    .preview-2019, .preview-2018, .preview-2017 {
-        padding-bottom: 5%;
+
+.year-container {
+    width: 100%;
+    align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+    .year-container {
+        height: 55%;
     }
 }
+
 
 .preview-2019 {
-    align-self: center;
     width: 100%;
+    height: 100%;
     display: block;
-    
 }
+
+
+
+
 
 
 .preview-2018 {
-    align-self: center;
     width: 100%;
+    height: 100%;
     display: none;
-    
 }
 
 
 .preview-2017 {
-    align-self: center;
     width: 100%;
+    height: 100%;
     display: none;
     
 }

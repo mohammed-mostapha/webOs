@@ -1,4 +1,15 @@
 
+function toggleSidebar() {
+  document.getElementById("sidebar-menu").classList.toggle('active');
+  document.getElementById("content-wrapper").classList.toggle('active');
+  document.getElementById("geometric").classList.toggle('active');
+}
+
+
+
+
+
+
 var myIndex2019 = 0;
 carousel2019();
 
@@ -134,10 +145,6 @@ $('.slick-next').on('mouseover',function(){
   
   });
 
-
-
-
- 
 
 
   $('.slick-prev').mouseover(function() {
