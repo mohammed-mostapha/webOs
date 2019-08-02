@@ -257,8 +257,8 @@ header {
 
 .preview-container {
     display: flex !important;
-    width: 90%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -266,7 +266,8 @@ header {
 
 
 .year-container {
-    height: 50% !important;
+    /* height: 50% !important; */
+    height: 55%;
     width: 100%;
     align-self: center;
 }
@@ -274,7 +275,7 @@ header {
 
 @media only screen and (min-width: 640px) {
     .year-container {
-        height: 70%;
+        height: 55%;
     }
 
 }
@@ -330,9 +331,11 @@ header {
 
 
 .slick-container {
-    height: 20%;
+    height: 30%;
     box-sizing: border-box;
     overflow: visible !important;
+    position: relative;
+    bottom: 0 !important;
 
 
 
