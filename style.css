@@ -243,12 +243,20 @@ header {
         position: relative !important;
         align-self: flex-start;
         height: 6rem;
-        tasnform: scale(0.7);
+        
     }
+
 
 
     .hamburger-container {
         width: 100%;
+    }
+
+    
+    .logo img {
+       
+        transform: scale(0.7);
+
     }
 
 
