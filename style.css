@@ -98,12 +98,6 @@ header {
 
 
 
-/* .hamburger-container label {
-    margin: 20px 0 0 0 ;
-    font-size: 2.5rem;
-    display: none;
-} */
-
 .hamburger-container #toggle-button {
     margin: 20px 20px 0 0 ;
     display: none;
@@ -228,16 +222,8 @@ header {
 }
 
 
-/* @media only screen and (max-width: 720px) {
 
-
-    .hamburger-container label {
-        display: block !important;
-        cursor: pointer;
-    } */
-
-
-    @media only screen and (max-width: 720px) {
+    @media only screen and (max-width: 992px) {
 
 
         .hamburger-container #toggle-button {
@@ -265,15 +251,8 @@ header {
         width: 100%;
     }
 
-    /* .hamburger-container label {
-        width: 26px;
-        height: fit-content;
-        float: right;
-    } */
 
     .hamburger-container #toggle-button {
-        /* width: 26px;
-        height: fit-content; */
         float: right;
     }
 
@@ -290,10 +269,7 @@ header {
     }
  
 
-    /* label {
-        position: relative;
-        z-index: 1;
-    } */
+    
 
     #toggle-button {
         position: relative;
@@ -307,11 +283,6 @@ header {
         transform: scale(0.8);
     }
 
-    
-
-    /* .hamburger-container label {
-        font-size: 2rem;
-    } */
 }
 
 @media only screen and (max-width: 350px) {
@@ -338,17 +309,12 @@ header {
 
 
 .preview-container {
-    /* display: flex !important; */
-    /* width: 70%; */
     height: 70%;
-    /* margin: 0 auto; */
     box-sizing: border-box;
-    /* border: 2px solid red; */
 }
 
 
 .row {
-    /* border: 1px solid green; */
     width: 100% !important;
     margin: 0 !important;
 }

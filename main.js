@@ -6,7 +6,7 @@ function toggleSidebar() {
 }
 
 
-$("#toggle-button").click(function(){
+$("").click(function(){
   $(this).toggleClass("active")
 });
 
@@ -41,7 +41,7 @@ function carousel2018() {
   myIndex2018++;
   if (myIndex2018 > x2018.length) {myIndex2018 = 1}    
   x2018[myIndex2018-1].style.display = "block";  
-  setTimeout(carousel2018, 2000); // Change image every 2 seconds
+  setTimeout(carousel2018, 2000); 
 }
 
 
@@ -58,7 +58,7 @@ function carousel2017() {
   myIndex2017++;
   if (myIndex2017 > x2017.length) {myIndex2017 = 1}    
   x2017[myIndex2017-1].style.display = "block";  
-  setTimeout(carousel2017, 2000); // Change image every 2 seconds
+  setTimeout(carousel2017, 2000);
 }
 
 
