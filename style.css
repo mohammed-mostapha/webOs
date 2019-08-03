@@ -98,10 +98,75 @@ header {
 
 
 
-.hamburger-container label {
+/* .hamburger-container label {
     margin: 20px 0 0 0 ;
     font-size: 2.5rem;
     display: none;
+} */
+
+.hamburger-container #toggle-button {
+    margin: 20px 20px 0 0 ;
+    display: none;
+}
+
+
+
+#toggle-button {
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+}
+
+#toggle-button:hover span {
+	cursor: pointer;
+}
+
+
+
+.line-1, .line-2, .line-3 {
+
+	cursor: pointer;
+	border-radius: 4px;
+	height: 5px;
+	width: 50px;
+	background: #000;
+	position: relative;
+	display: block;
+    content: '';
+    transition: all 300ms ease-in;
+
+}
+
+.line-1, .line-2 {
+    margin-bottom :8px;
+}
+
+
+
+#toggle-button.active .line-2 {
+
+    background-color: transparent;
+}
+
+#toggle-button.active .line-1 {
+
+    top: 10px;
+    position: absolute;
+}
+
+#toggle-button.active .line-3 {
+
+    bottom: 10px;
+    position: absolute;
+}
+
+#toggle-button.active .line-1 {
+	transform: rotate(45deg);
+    top: 28px;
+}
+
+#toggle-button.active .line-3 {
+	transform: rotate(-45deg);
 }
 
 
@@ -116,11 +181,12 @@ header {
     z-index: 0;
     height: 100%;
     width: 0px;
-    background: #CC986A;
-    opacity: 0.6;
-    color: #fff;
+    background: #fff;
+    color: #000;
     right: 0px;
     transition: all 500ms linear;
+    /* border: 1px solid grey; */
+    box-shadow: 0px 0px 30px 0px grey;
 }
 
 #sidebar-menu.active {
@@ -128,15 +194,21 @@ header {
 }
 
 #sidebar-menu ul {
+    position: fixed;
     list-style: none;
     padding-left: 0px;
+    height: 100%;
+    padding-top: 10%;
+    margin-left: 2rem;
 }
 
 #sidebar-menu ul li {
+    text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
-    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #000;
 }
 
 #content-wrapper {
@@ -156,14 +228,23 @@ header {
 }
 
 
-@media only screen and (max-width: 720px) {
+/* @media only screen and (max-width: 720px) {
 
 
     .hamburger-container label {
         display: block !important;
         cursor: pointer;
-    }
+    } */
 
+
+    @media only screen and (max-width: 720px) {
+
+
+        .hamburger-container #toggle-button {
+            display: block !important;
+            cursor: pointer;
+        }
+    
 
 
 
@@ -184,9 +265,15 @@ header {
         width: 100%;
     }
 
-    .hamburger-container label {
+    /* .hamburger-container label {
         width: 26px;
         height: fit-content;
+        float: right;
+    } */
+
+    .hamburger-container #toggle-button {
+        /* width: 26px;
+        height: fit-content; */
         float: right;
     }
 
@@ -203,7 +290,12 @@ header {
     }
  
 
-    label {
+    /* label {
+        position: relative;
+        z-index: 1;
+    } */
+
+    #toggle-button {
         position: relative;
         z-index: 1;
     }
@@ -217,9 +309,9 @@ header {
 
     
 
-    .hamburger-container label {
+    /* .hamburger-container label {
         font-size: 2rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 350px) {
@@ -256,7 +348,7 @@ header {
 
 
 .row {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100% !important;
     margin: 0 !important;
 }
