@@ -6,7 +6,7 @@ function toggleSidebar() {
 }
 
 
-$("").click(function(){
+$("#toggle-button").click(function(){
   $(this).toggleClass("active")
 });
 
