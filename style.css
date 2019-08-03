@@ -240,7 +240,7 @@ header {
     }
 
     .logo {
-        position: absolute !important;
+        position: relative !important;
         align-self: flex-start;
         height: 6rem;
         
