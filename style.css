@@ -243,7 +243,7 @@ header {
         position: relative !important;
         align-self: flex-start;
         height: 6rem;
-        
+        tasnform: scale(0.7);
     }
 
 
