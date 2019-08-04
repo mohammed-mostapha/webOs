@@ -123,7 +123,7 @@ $('.slick').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 8,
         slidesToScroll: 1
       }
     }
