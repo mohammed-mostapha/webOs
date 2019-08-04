@@ -95,7 +95,7 @@ $('.slick').slick({
   dots: false,
   infinite: false,
   pauseOnHover: true,
-  slidesToShow: 4,
+  slidesToShow: 8,
   autoplay: false,
   autoplaySpeed: 1,
   slidesToScroll: 1,
@@ -107,7 +107,7 @@ $('.slick').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 8,
         slidesToScroll: 1,
         infinite: false,
         dots: true
@@ -116,14 +116,14 @@ $('.slick').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 8,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1
       }
     }

@@ -73,6 +73,7 @@ header {
 
 
 
+
 .hamburger-container {
     text-align: right;
 
@@ -99,7 +100,7 @@ header {
 
 
 .hamburger-container #toggle-button {
-    margin: 20px 20px 0 0 ;
+    margin: 20px 0px 0 0 ;
     display: none;
 }
 
@@ -108,7 +109,7 @@ header {
 #toggle-button {
     cursor: pointer;
     padding: 15px;
-    width: 50px;
+    width: 40px;
 }
 
 #toggle-button:hover span {
@@ -121,8 +122,8 @@ header {
 
 	cursor: pointer;
 	border-radius: 4px;
-	height: 5px;
-	width: 50px;
+	height: 3px;
+	width: 40px;
 	background: #000;
 	position: relative;
 	display: block;
@@ -132,7 +133,7 @@ header {
 }
 
 .line-1, .line-2 {
-    margin-bottom :8px;
+    margin-bottom :6px;
 }
 
 
@@ -156,7 +157,7 @@ header {
 
 #toggle-button.active .line-1 {
 	transform: rotate(45deg);
-    top: 28px;
+    top: 26px;
 }
 
 #toggle-button.active .line-3 {
@@ -179,41 +180,43 @@ header {
     color: #000;
     right: 0px;
     transition: all 500ms linear;
-    /* border: 1px solid grey; */
     box-shadow: 0px 0px 30px 0px grey;
 }
 
 #sidebar-menu.active {
-    width: 200px;
+    width: 150px;
 }
 
 #sidebar-menu ul {
-    position: fixed;
+    display: block;
+    width: fit-content;
+    margin: 3rem auto;
     list-style: none;
     padding-left: 0px;
     height: 100%;
     padding-top: 10%;
-    margin-left: 2rem;
+
 }
 
 #sidebar-menu ul li {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid #000;
 }
 
 #content-wrapper {
+    position: relative;
+    left: 0;
     transition: all 500ms linear;
 }
 
 #content-wrapper.active {
-    margin-right: 200px;
+    left: -150px;
 }
 
-#geometic {
+#geometric {
     transition: all 500ms linear;
 }
 
@@ -320,15 +323,15 @@ header {
 }
 
 .row-top {
-    height: 25%;
+    height: 20%;
 }
 
 .row-middle {
-    height: 50%;
+    height: 70%;
 }
 
 .row-bottom {
-    height: 25%;
+    height: 10%;
 }
 
 
@@ -465,11 +468,12 @@ header {
     margin: 0;
 }
 
-@media only screen and (max-width: 720px) {
-    .slick-item p {
-        font-size: 2rem !important;
-    }
+
+
+.slick-item p {
+    font-size: 4.5vh !important;
 }
+
 
 .slick-item-1 {
     background: #67CCE0;
@@ -481,8 +485,6 @@ header {
     align-self: flex-end;
     margin: 0 auto;
     max-width: fit-content;
-    font-size: 5rem;
-    
 }
 
 
@@ -511,8 +513,6 @@ header {
     align-self: flex-end;
     margin: 0 auto;
     max-width: fit-content;
-    font-size: 5rem;
-    
 }
 
 .slick-item-6 {
@@ -540,7 +540,6 @@ header {
     align-self: flex-end;
     margin: 0 auto;
     max-width: fit-content;
-    font-size: 5rem;   
 }
 
 .slick-item-10 {
