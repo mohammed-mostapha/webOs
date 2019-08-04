@@ -107,7 +107,7 @@ $('.slick').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 8,
+        slidesToShow: 7,
         slidesToScroll: 1,
         infinite: false,
         dots: true
@@ -116,14 +116,14 @@ $('.slick').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 8,
+        slidesToShow: 4,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 8,
+        slidesToShow: 4,
         slidesToScroll: 1
       }
     }
